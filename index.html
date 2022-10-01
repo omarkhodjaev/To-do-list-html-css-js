@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="todolist__container">
+        <div class="todolist__adder">
+            <form id="adder-form" class="adder__form">
+                <div class="input__wrapper">
+                    <input type="text" autofocus autocomplete="off" placeholder="Add task..." required minlength="3" id="adder-input">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button> <i class="fas fa-plus"></i> Create</button>
+            </form>
+            <div class="todolist__controllers">
+                <button id="delete-all" class="delete__all">Delete all</button>
+            </div>
+        </div>
+        <div id="todolistitem-container" class="todolistitem__container">
+            
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
